@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esma Nur Ertay</title>
+</head>
+<style>
+  body{ 
+/*background-color:linear-gradient();*/
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: -webkit-radial-gradient(circle,#fbeee6,#ffe5d8,#ffcad4,#f3abb6,#9f8189);
+
+
+  }
+    
+    #container{
+        width: 280px;
+        height: 200px;
+      
+        padding: 20%;
+        margin: 0px auto;
+
+
+
+    }
+    button{
+        border: none;
+        color:white;
+        background-color: #f3abb6;
+        height: 25px;
+        border:1px dotted #9f8189;
+        font-family: 'Courier New', Courier, monospace;
+        display: inline-block;
+        border-radius: 50px     ;
+        
+    }
+    #anaYazi{
+        color: #3a3234;
+        font-family: 'Courier New', Courier, monospace;
+        
+        
+        
+    }
+</style>
+<body>
+<div id="container">
+    <p id="anaYazi"></p>
+    <button type="button" onclick="azSirala();">A'dan Z'ye Sırala</button>
+    <p id="az"></p>
+    <button type="button" onclick="zaSirala();">Z'den A'ya Sırala</button>
+    <p id="za"></p>
+   
+   
+</div>
+    <script>
+ 
+var dil = ["html","js","css","angular","jquery"]
+document.getElementById('anaYazi').innerHTML = dil;
+
+//A'dan Z'ye sıralama fonksiyonu,
+
+function azSirala(){
+    document.getElementById('az').innerHTML=dil.sort();
+}
+
+//Z'den A'ya sıralama fonksiyonu
+
+function zaSirala(){
+    document.getElementById('za').innerHTML=dil.reverse();
+}
+
+    </script>
+</body>
+</html>
